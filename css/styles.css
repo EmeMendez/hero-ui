@@ -1,4 +1,80 @@
 :root{
     --primary-font: 'Roboto', sans-serif;
     --secondary-font: 'Roboto Condensed', sans-serif;
+    --white: #fff;
+    --primary: #1B90FC;
+    --dark: #202020;
+}
+
+body{
+    margin: 0;
+    font-family: var(--primary-font);
+    background-color: black;
+}
+.wrapper{
+    max-inline-size: 1664px;
+    margin: auto;
+    border: 1px solid red;
+    overflow: hidden;
+    /* overflow: hidden; para que la imagen no se desborde */
+}
+.hero h1{
+    font-family: var(--secondary-font);
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--white);
+    margin-block-end: 8px;
+}
+.hero p{
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--white);
+}
+img{
+   max-inline-size: 100%;
+}
+button{
+    padding-block: 16px;
+    padding-inline: 32px;
+    border-radius: 50px;
+    background: var(--primary);
+    border: 0;
+    color: var(--white);
+    text-transform: uppercase;
+    block-size:  48px;
+    /* inline-size: 150px; */
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 16px;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: row;
+    block-size: 768px;
+    align-items: center;
+}
+.card{
+    max-inline-size: 412px;
+    z-index: 2;
+    position: relative;
+}
+.hero::before{
+    content: '';
+    inline-size: 50%;
+    block-size: 100%;
+    background: var(--dark);
+    display: block;
+    position: absolute;
+    inset-block: 0;
+    z-index: 1;
+}
+.hero{
+    background-color: var(--dark);
+    background-image: url('../images/loki.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
 }
