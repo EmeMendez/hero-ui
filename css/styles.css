@@ -9,12 +9,10 @@
 body{
     margin: 0;
     font-family: var(--primary-font);
-    background-color: black;
 }
 .wrapper{
     max-inline-size: 1664px;
     margin: auto;
-    border: 1px solid red;
     overflow: hidden;
     /* overflow: hidden; para que la imagen no se desborde */
 }
@@ -70,6 +68,12 @@ button{
     position: absolute;
     inset-block: 0;
     z-index: 1;
+    clip-path: polygon(0 0,                  
+    calc(100% - 151px) 0,                  
+    100% 100%,                 
+    0 100%);
+    /* x,y */
+
 }
 .hero{
     background-color: var(--dark);
@@ -77,4 +81,8 @@ button{
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
+    clip-path: polygon(0 0, 
+    100% 0,100% 
+    calc(100% - 128px), 
+    0 100%);
 }
