@@ -22,6 +22,7 @@ body{
     font-weight: bold;
     text-transform: uppercase;
     color: var(--white);
+    margin-block-start: 25.3px;
     margin-block-end: 8px;
 }
 .hero p{
@@ -29,9 +30,12 @@ body{
     font-size: 16px;
     line-height: 24px;
     color: var(--white);
+    margin-block-end: 25.3px;
 }
 img{
-   max-inline-size: 100%;
+    max-inline-size: 100%;
+    width: 163.51px;
+    height: 67.467px;
 }
 button{
     padding-block: 16px;
